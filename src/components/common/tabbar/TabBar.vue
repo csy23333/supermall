@@ -13,6 +13,8 @@ export default {
   display: flex;
   background-color: #f6f6f6;
   position: fixed;
+  padding-top: 5px;
+  padding-bottom: 2px;
   left: 0;
   right: 0;
   bottom: 0;

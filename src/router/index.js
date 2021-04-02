@@ -4,33 +4,38 @@ const Home = () => import("@/views/home/Home");
 const Categories = () => import("@/views/categories/Categories");
 const Shopcart = () => import("@/views/shopcart/Shopcart");
 const Profile = () => import("@/views/profile/Profile");
+const Detail = () => import("@/views/detail/Detail");
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    redirect: "/home",
+    redirect: "/home"
   },
   {
     path: "/home",
-    component: Home,
+    component: Home
   },
   {
     path: "/categories",
-    component: Categories,
+    component: Categories
   },
   {
     path: "/shopcart",
-    component: Shopcart,
+    component: Shopcart
   },
   {
     path: "/profile",
-    component: Profile,
+    component: Profile
   },
+  {
+    path: "/detail/:iid",
+    component: Detail
+  }
 ];
 const router = new VueRouter({
   routes,
-  mode: "history",
+  mode: "history"
 });
 
 export default router;

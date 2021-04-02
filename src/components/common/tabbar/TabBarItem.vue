@@ -14,8 +14,8 @@ export default {
     path: String,
     activeColor: {
       type: String,
-      default: "red",
-    },
+      default: "red"
+    }
   },
   data() {
     return {};
@@ -27,14 +27,14 @@ export default {
     },
     activeStyle() {
       return this.isActive ? { color: this.activeColor } : {};
-    },
+    }
   },
   methods: {
     itemClick() {
       //解决连续点击同一组件报错的问题(catch(err=>err))
-      this.$router.push(this.path).catch((err) => err);
-    },
-  },
+      this.$router.push(this.path).catch(err => err);
+    }
+  }
 };
 </script>
 <style scoped>
@@ -42,6 +42,8 @@ export default {
   flex: 1;
   text-align: center;
   height: 49px;
+  /* padding-top: 15px; */
+  /* line-height: 49px; */
 }
 .tab-bar-item img {
   width: 24px;
